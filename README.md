@@ -92,7 +92,7 @@ JWT_SECRET
 ### Frontend / Admin
 
 ```env
-VITE_BACKEND_URL=
+VITE_BACKEND_URL
 ```
 
 ## 📌 Author
