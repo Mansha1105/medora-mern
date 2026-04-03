@@ -9,10 +9,16 @@ const Navbar = () => {
 
   const { token, setToken, userData } = useContext(AppContext)
 
+  const adminPanelUrl = 'https://medora-admin-omega.vercel.app/'
+
   const logout = () => {
     setToken(false)
     localStorage.removeItem('token')
     navigate('/')
+  }
+
+  const openAdminPanel = () => {
+    window.location.href = adminPanelUrl
   }
 
   const navLinkStyle = ({ isActive }) =>
@@ -38,7 +44,7 @@ const Navbar = () => {
             HOME
           </NavLink>
           <NavLink className={navLinkStyle} to="/doctors">
-            DOCTORS
+            ALL DOCTORS
           </NavLink>
           <NavLink className={navLinkStyle} to="/about">
             ABOUT
@@ -46,6 +52,14 @@ const Navbar = () => {
           <NavLink className={navLinkStyle} to="/contact">
             CONTACT
           </NavLink>
+
+          {/* Admin Panel Button */}
+          <button
+            onClick={openAdminPanel}
+            className="border border-gray-300 px-6 py-2 rounded-full text-sm font-medium hover:bg-primary hover:text-white transition-all duration-300"
+          >
+            Admin Panel
+          </button>
         </ul>
 
         {/* Right Side */}
@@ -133,6 +147,14 @@ const Navbar = () => {
           <NavLink onClick={() => setShowMenu(false)} to="/contact">
             <p className="hover:text-primary">Contact</p>
           </NavLink>
+
+          {/* Mobile Admin Button */}
+          <button
+            onClick={openAdminPanel}
+            className="border border-gray-300 px-4 py-2 rounded-full hover:bg-primary hover:text-white transition-all duration-300"
+          >
+            Admin Panel
+          </button>
         </ul>
       </div>
     </nav>
