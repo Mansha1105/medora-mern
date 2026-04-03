@@ -1,0 +1,24 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Outer rounded square background -->
+  <rect x="0" y="0" width="200" height="200" rx="44" fill="#e8f4fb"/>
+
+  <!-- Medical cross horizontal bar -->
+  <rect x="36" y="76" width="128" height="48" rx="12" fill="#2980b9"/>
+
+  <!-- Medical cross vertical bar -->
+  <rect x="76" y="36" width="48" height="128" rx="12" fill="#2980b9"/>
+
+  <!-- Heartbeat line over cross center -->
+  <polyline
+    points="38,100  62,100  72,72  84,130  93,84  102,112  112,100  162,100"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+
+  <!-- Dot accent top-right -->
+  <circle cx="162" cy="38" r="10" fill="#2980b9" opacity="0.75"/>
+
+</svg>
