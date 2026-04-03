@@ -8,7 +8,7 @@ import Contact from './pages/Contact'
 import Myprofile from './pages/Myprofile'
 import MyAppointments from './pages/MyAppointments'
 import Appointment from './pages/Appointment'
-import Navbar from './Components/navbar'
+import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
